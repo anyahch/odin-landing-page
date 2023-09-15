@@ -2,9 +2,12 @@
     font-family: Roboto;
 }
 
-section{
+section,
+header{
     display: flex;
     padding: 50px;
+    width: 100vw;
+    justify-content: center;
 }
 
 .header-title{
@@ -28,7 +31,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-width: 1000px;
 }
 
 .links{
@@ -50,7 +52,8 @@ a:visited{
 }
 
 header,
-section.first{
+section.first,
+footer{
     background-color: #1F2937;
 }
 
@@ -67,6 +70,14 @@ button{
     padding: 5px 20px;
     color:#e5e7eb;
     font-weight: bold;
+    width: 120px;
+    height: 40px;
+}
+
+.header-button:hover{
+    background-color: #1F2937;
+    border: none;
+    font-size: large;
 }
 
 .img-top{
@@ -132,8 +143,34 @@ h3{
 .fourth{
     background-color: #3882f6;
     color:#F9FAF8;
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-fourth{
+    display: flex;
+    flex-direction: column;
+}
 
+button{
+
+}
+
+.bottom-button{
+    border:#e5e7eb 2px solid;
+}
+
+.bottom-button:hover{
+    border: none;
+    font-size: large;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #e5e7eb;
+    height: 100px;
+    width: 100vw;
 }
