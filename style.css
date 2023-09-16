@@ -1,5 +1,6 @@
 *{
     font-family: Roboto;
+    box-sizing: border-box;
 }
 
 section,
@@ -8,13 +9,22 @@ header{
     padding: 50px;
     width: 100vw;
     justify-content: center;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 950px
 }
 
 .header-title{
     font-size: 48px;
     font-weight: extra-bold;
     color: #F9FAF8;
-    }
+}
     
 .header-text{
     font-size: 18px;
@@ -31,10 +41,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.links{
-
 }
 
 a{
@@ -88,12 +94,18 @@ button{
 
 .second{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button{
     background-color: #3882f6;
 }
 
+.container-second {
+    min-width: 300px;
+    max-width: 450px;
+}
 
 h2{
     font-size: 36px;
@@ -105,10 +117,13 @@ h2{
 
 .container-second{
     display: flex;
-    text-align:center;
+    text-align: center;
+    justify-content: center;
 }
 
-.container-second-caption
+.container-second-caption{
+    padding: 10px 20px;
+}
 
 .img-square{
     width:200px;
@@ -124,7 +139,14 @@ h2{
 .third{
     background-color: #e5e7eb;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.quote-full{
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
 }
 
 h3{
@@ -135,29 +157,42 @@ h3{
     font-size: 36px;
     font-weight: light;
     font-style: italic;
-    color:#1F2937
+    color:#1F2937;
 }
 
 /* FOURTH SECTION */
 
 .fourth{
-    background-color: #3882f6;
     color:#F9FAF8;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
 }
 
 .container-fourth{
+    background-color: #3882f6;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 100px;
+    min-width: 950px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.container-fourth-text{
     display: flex;
     flex-direction: column;
 }
 
-button{
-
+h4{
+    margin-bottom: -15px;
 }
+
 
 .bottom-button{
     border:#e5e7eb 2px solid;
+    align-self: center;
 }
 
 .bottom-button:hover{
